@@ -16,7 +16,7 @@ def getSSTfiles(lat_bounds,lon_bounds,time_bounds):
     """
 
     print('Beginning file download with requests')
-    website="https://coastwatch.noaa.gov/erddap/griddap/noaacwBLENDEDsstDaily.htmlTable?"
+    website="https://coastwatch.noaa.gov/erddap/griddap/noaacwBLENDEDsstDaily.nc?"
     lat_rq='[('+ str(min(lat_bounds)) + '):1:(' + str(max(lat_bounds)) + ')]'
     lon_rq='[('+ str(min(lon_bounds)) + '):1:(' + str(max(lon_bounds)) + ')]'
     time_rq='[(' + time_bounds[0] + '):1:(' + time_bounds[1] + ')]'
